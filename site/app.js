@@ -61,6 +61,11 @@ const T = {
     runs: (n) => `mediana de ${n} ${n === 1 ? "corrida" : "corridas"}`,
     report: "Ver la corrida y sus informes",
     trend: (n) => `Rendimiento en las últimas ${n} auditorías`,
+    actions: [
+      ["Ver el código del monitor", REPO, "primary"],
+      ["Ver los datos en bruto", `${REPO}/tree/main/data`],
+      ["Ver los logs de cada medición", `${REPO}/actions`],
+    ],
     stripUptime: "Disponibilidad",
     stripPerf: "Rendimiento (laboratorio)",
     stripSec: "Seguridad observable",
@@ -161,6 +166,11 @@ const T = {
     runs: (n) => `median of ${n} ${n === 1 ? "run" : "runs"}`,
     report: "See the run and its reports",
     trend: (n) => `Performance over the last ${n} audits`,
+    actions: [
+      ["See the monitor's code", REPO, "primary"],
+      ["See the raw data", `${REPO}/tree/main/data`],
+      ["See the log of every check", `${REPO}/actions`],
+    ],
     stripUptime: "Availability",
     stripPerf: "Performance (lab)",
     stripSec: "Observable security",
@@ -462,6 +472,9 @@ function renderStatic() {
   const button = $("lang");
   button.textContent = t().langLabel;
   button.setAttribute("aria-label", t().langAria);
+  $("actions").replaceChildren(
+    ...t().actions.map(([label, href, kind]) => el("a", { class: kind ? `cta ${kind}` : "cta", href, target: "_blank", rel: "noreferrer" }, label, " ↗")),
+  );
   $("evidence-list").replaceChildren(...t().ev.map(([name, what, href]) => el("li", {}, el("a", { href }, el("b", {}, name), el("span", {}, what)))));
   $("limits").replaceChildren(...t().limits.map((l) => el("li", {}, l)));
   const updated = data.status?.generatedAt;

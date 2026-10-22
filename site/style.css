@@ -163,6 +163,36 @@ a:focus-visible {
   color: var(--ink-dim);
 }
 
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 1.75rem;
+}
+
+.cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0.7rem 1.2rem;
+  border: 2px solid var(--ink);
+  border-radius: 6px;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.cta.primary {
+  background: var(--ink);
+  color: var(--signal);
+}
+
+.cta:hover,
+.cta:focus-visible {
+  background: var(--signal);
+  border-color: var(--ink);
+  color: var(--ink);
+}
+
 .strip {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
