@@ -1,0 +1,49 @@
+[
+ {
+  "t": "2026-10-22T18:03:37.708Z",
+  "r": {
+   "home": {
+    "s": 200,
+    "ms": 382,
+    "ok": true
+   },
+   "home-en": {
+    "s": 200,
+    "ms": 353,
+    "ok": true
+   },
+   "migozz": {
+    "s": 200,
+    "ms": 370,
+    "ok": true
+   },
+   "aria": {
+    "s": 200,
+    "ms": 336,
+    "ok": true
+   },
+   "devpanel": {
+    "s": 200,
+    "ms": 283,
+    "ok": true
+   },
+   "portafolio": {
+    "s": 200,
+    "ms": 380,
+    "ok": true
+   },
+   "docs": {
+    "s": 200,
+    "ms": 253,
+    "ok": true
+   },
+   "health": {
+    "s": 0,
+    "ms": 18,
+    "ok": false,
+    "why": "network",
+    "retried": true
+   }
+  }
+ }
+]

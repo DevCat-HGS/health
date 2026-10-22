@@ -1,0 +1,352 @@
+{
+ "generatedAt": "2026-10-22T18:03:37.708Z",
+ "intervalMinutes": 30,
+ "days": 90,
+ "targets": [
+  {
+   "id": "home",
+   "group": "site",
+   "name": {
+    "es": "Portada",
+    "en": "Home"
+   },
+   "url": "https://hgsportafolio.site/",
+   "last": {
+    "t": "2026-10-22T18:03:37.708Z",
+    "s": 200,
+    "ms": 382,
+    "ok": true
+   },
+   "uptime": {
+    "h24": {
+     "pct": 100,
+     "n": 1
+    },
+    "d7": {
+     "pct": 100,
+     "n": 1
+    },
+    "d30": {
+     "pct": 100,
+     "n": 1
+    },
+    "d90": {
+     "pct": 100,
+     "n": 1
+    }
+   },
+   "daily": [
+    {
+     "d": "2026-10-22",
+     "n": 1,
+     "ok": 1,
+     "ms": 382
+    }
+   ],
+   "incidents": []
+  },
+  {
+   "id": "home-en",
+   "group": "site",
+   "name": {
+    "es": "Portada en inglés",
+    "en": "Home in English"
+   },
+   "url": "https://hgsportafolio.site/en/",
+   "last": {
+    "t": "2026-10-22T18:03:37.708Z",
+    "s": 200,
+    "ms": 353,
+    "ok": true
+   },
+   "uptime": {
+    "h24": {
+     "pct": 100,
+     "n": 1
+    },
+    "d7": {
+     "pct": 100,
+     "n": 1
+    },
+    "d30": {
+     "pct": 100,
+     "n": 1
+    },
+    "d90": {
+     "pct": 100,
+     "n": 1
+    }
+   },
+   "daily": [
+    {
+     "d": "2026-10-22",
+     "n": 1,
+     "ok": 1,
+     "ms": 353
+    }
+   ],
+   "incidents": []
+  },
+  {
+   "id": "migozz",
+   "group": "cases",
+   "name": {
+    "es": "Caso MIGOZZ",
+    "en": "MIGOZZ case"
+   },
+   "url": "https://hgsportafolio.site/migozz/",
+   "last": {
+    "t": "2026-10-22T18:03:37.708Z",
+    "s": 200,
+    "ms": 370,
+    "ok": true
+   },
+   "uptime": {
+    "h24": {
+     "pct": 100,
+     "n": 1
+    },
+    "d7": {
+     "pct": 100,
+     "n": 1
+    },
+    "d30": {
+     "pct": 100,
+     "n": 1
+    },
+    "d90": {
+     "pct": 100,
+     "n": 1
+    }
+   },
+   "daily": [
+    {
+     "d": "2026-10-22",
+     "n": 1,
+     "ok": 1,
+     "ms": 370
+    }
+   ],
+   "incidents": []
+  },
+  {
+   "id": "aria",
+   "group": "cases",
+   "name": {
+    "es": "Caso ARIA",
+    "en": "ARIA case"
+   },
+   "url": "https://hgsportafolio.site/aria/",
+   "last": {
+    "t": "2026-10-22T18:03:37.708Z",
+    "s": 200,
+    "ms": 336,
+    "ok": true
+   },
+   "uptime": {
+    "h24": {
+     "pct": 100,
+     "n": 1
+    },
+    "d7": {
+     "pct": 100,
+     "n": 1
+    },
+    "d30": {
+     "pct": 100,
+     "n": 1
+    },
+    "d90": {
+     "pct": 100,
+     "n": 1
+    }
+   },
+   "daily": [
+    {
+     "d": "2026-10-22",
+     "n": 1,
+     "ok": 1,
+     "ms": 336
+    }
+   ],
+   "incidents": []
+  },
+  {
+   "id": "devpanel",
+   "group": "cases",
+   "name": {
+    "es": "Caso DevPanel",
+    "en": "DevPanel case"
+   },
+   "url": "https://hgsportafolio.site/devpanel/",
+   "last": {
+    "t": "2026-10-22T18:03:37.708Z",
+    "s": 200,
+    "ms": 283,
+    "ok": true
+   },
+   "uptime": {
+    "h24": {
+     "pct": 100,
+     "n": 1
+    },
+    "d7": {
+     "pct": 100,
+     "n": 1
+    },
+    "d30": {
+     "pct": 100,
+     "n": 1
+    },
+    "d90": {
+     "pct": 100,
+     "n": 1
+    }
+   },
+   "daily": [
+    {
+     "d": "2026-10-22",
+     "n": 1,
+     "ok": 1,
+     "ms": 283
+    }
+   ],
+   "incidents": []
+  },
+  {
+   "id": "portafolio",
+   "group": "cases",
+   "name": {
+    "es": "Caso del portafolio",
+    "en": "Portfolio case"
+   },
+   "url": "https://hgsportafolio.site/portafolio/",
+   "last": {
+    "t": "2026-10-22T18:03:37.708Z",
+    "s": 200,
+    "ms": 380,
+    "ok": true
+   },
+   "uptime": {
+    "h24": {
+     "pct": 100,
+     "n": 1
+    },
+    "d7": {
+     "pct": 100,
+     "n": 1
+    },
+    "d30": {
+     "pct": 100,
+     "n": 1
+    },
+    "d90": {
+     "pct": 100,
+     "n": 1
+    }
+   },
+   "daily": [
+    {
+     "d": "2026-10-22",
+     "n": 1,
+     "ok": 1,
+     "ms": 380
+    }
+   ],
+   "incidents": []
+  },
+  {
+   "id": "docs",
+   "group": "support",
+   "name": {
+    "es": "Documentación",
+    "en": "Docs"
+   },
+   "url": "https://docs.hgsportafolio.site/",
+   "last": {
+    "t": "2026-10-22T18:03:37.708Z",
+    "s": 200,
+    "ms": 253,
+    "ok": true
+   },
+   "uptime": {
+    "h24": {
+     "pct": 100,
+     "n": 1
+    },
+    "d7": {
+     "pct": 100,
+     "n": 1
+    },
+    "d30": {
+     "pct": 100,
+     "n": 1
+    },
+    "d90": {
+     "pct": 100,
+     "n": 1
+    }
+   },
+   "daily": [
+    {
+     "d": "2026-10-22",
+     "n": 1,
+     "ok": 1,
+     "ms": 253
+    }
+   ],
+   "incidents": []
+  },
+  {
+   "id": "health",
+   "group": "support",
+   "name": {
+    "es": "Esta página",
+    "en": "This page"
+   },
+   "url": "https://health.hgsportafolio.site/",
+   "last": {
+    "t": "2026-10-22T18:03:37.708Z",
+    "s": 0,
+    "ms": 18,
+    "ok": false,
+    "why": "network",
+    "retried": true
+   },
+   "uptime": {
+    "h24": {
+     "pct": 0,
+     "n": 1
+    },
+    "d7": {
+     "pct": 0,
+     "n": 1
+    },
+    "d30": {
+     "pct": 0,
+     "n": 1
+    },
+    "d90": {
+     "pct": 0,
+     "n": 1
+    }
+   },
+   "daily": [
+    {
+     "d": "2026-10-22",
+     "n": 1,
+     "ok": 0,
+     "ms": null
+    }
+   ],
+   "incidents": [
+    {
+     "start": "2026-10-22T18:03:37.708Z",
+     "end": null,
+     "samples": 1,
+     "why": "network"
+    }
+   ]
+  }
+ ]
+}
