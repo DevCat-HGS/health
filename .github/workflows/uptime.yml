@@ -1,0 +1,48 @@
+name: Uptime
+
+# Every 30 minutes: checks each page (scripts/targets.mjs), stores the sample in data/uptime/, rebuilds
+# data/status.json, opens or closes the incident issues and republishes the page. GitHub can start a scheduled run
+# a few minutes late; the page says so.
+on:
+  schedule:
+    - cron: "7,37 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: data
+  cancel-in-progress: false
+
+jobs:
+  check:
+    name: Check every page
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22
+      - name: Check
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: node scripts/check-uptime.mjs
+      - name: Commit the sample
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data
+          git diff --cached --quiet && exit 0
+          git commit -q -m "data: uptime $(date -u +%Y-%m-%dT%H:%MZ)"
+          # The daily audit may have pushed meanwhile; data files never overlap, so a rebase is safe.
+          for i in 1 2 3; do git pull -q --rebase origin main && git push -q origin HEAD:main && exit 0; sleep 5; done
+          exit 1
+
+  deploy:
+    needs: check
+    uses: ./.github/workflows/deploy.yml

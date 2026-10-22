@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Salud de hgsportafolio.site · Harol Guerrero Salgado</title>
+    <meta
+      name="description"
+      content="Disponibilidad, rendimiento, seguridad y calidad de hgsportafolio.site, medidos por comprobaciones automáticas y públicas. Cada cifra enlaza a la medición que la produjo."
+    />
+    <meta name="color-scheme" content="light" />
+    <meta name="theme-color" content="#ebeae4" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="preload" href="fonts/archivo-latin-wdth-normal.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <a class="skip" href="#main" data-i18n="skip">Saltar al contenido</a>
+    <header class="top">
+      <div class="wrap top-row">
+        <a class="brand" href="https://hgsportafolio.site/">HGS</a>
+        <span class="here"><i aria-hidden="true"></i>health.hgsportafolio.site</span>
+        <button class="lang" type="button" id="lang" aria-label="EN · Switch to English">EN</button>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero wrap">
+        <p class="kicker" data-i18n="kicker">Centro de confianza técnica</p>
+        <h1 class="display"><span data-i18n="title1">Comprobado,</span> <span data-i18n="title2">no prometido.</span></h1>
+        <p class="lede" data-i18n="lede">
+          Esta página no la escribo yo: la llenan comprobaciones automáticas cada 30 minutos y una auditoría diaria
+          contra producción, desde un repositorio público. Cada cifra trae su fecha y enlaza a la medición que la
+          produjo. Lo que no se midió dice «No evaluado».
+        </p>
+        <ul class="strip" id="strip" aria-label="Resumen"></ul>
+      </section>
+
+      <section class="block wrap" id="uptime" aria-labelledby="uptime-title">
+        <div class="block-head">
+          <h2 id="uptime-title" data-i18n="uptimeTitle">Disponibilidad</h2>
+          <p class="meta" id="uptime-meta"></p>
+        </div>
+        <p class="explain" data-i18n="uptimeExplain">
+          Una página cuenta como arriba solo si responde 200 y su HTML trae el texto esperado: una página de error que
+          responda 200 sigue siendo una caída. Si falla, se vuelve a probar a los 10 segundos antes de contarla.
+        </p>
+        <div class="targets" id="targets"></div>
+        <p class="legend" aria-hidden="true">
+          <span><i class="day up"></i><span data-i18n="legendUp">Todo el día arriba</span></span>
+          <span><i class="day partial"></i><span data-i18n="legendPartial">Alguna caída</span></span>
+          <span><i class="day down"></i><span data-i18n="legendDown">Caída la mayor parte del día</span></span>
+          <span><i class="day none"></i><span data-i18n="legendNone">Sin mediciones</span></span>
+        </p>
+        <h3 data-i18n="incidentsTitle">Incidentes</h3>
+        <ul class="incidents" id="incidents"></ul>
+      </section>
+
+      <section class="block wrap" id="performance" aria-labelledby="perf-title">
+        <div class="block-head">
+          <h2 id="perf-title" data-i18n="perfTitle">Rendimiento</h2>
+          <p class="meta" id="perf-meta"></p>
+        </div>
+        <p class="explain" data-i18n="perfExplain">
+          Datos de laboratorio: Lighthouse en Chrome, en un servidor de GitHub, contra la portada en producción. Tres
+          corridas por perfil y se muestra la mediana. El perfil móvil simula un teléfono lento con red 4G lenta.
+        </p>
+        <div class="lab" id="lab"></div>
+        <div class="field">
+          <h3 data-i18n="fieldTitle">Usuarios reales</h3>
+          <p><span class="state unknown" data-i18n="notEvaluated">No evaluado</span></p>
+          <p class="explain" data-i18n="fieldExplain">
+            Las métricas de usuarios reales (el informe CrUX de Chrome, e INP, que solo se mide con personas de
+            verdad) necesitan un volumen de visitas que el sitio todavía no tiene. No se mezclan con las de
+            laboratorio ni se inventan.
+          </p>
+        </div>
+      </section>
+
+      <section class="block wrap" id="security" aria-labelledby="sec-title">
+        <div class="block-head">
+          <h2 id="sec-title" data-i18n="secTitle">Seguridad observable</h2>
+          <p class="meta" id="sec-meta"></p>
+        </div>
+        <p class="explain" data-i18n="secExplain">
+          Solo lo que cualquiera puede comprobar desde fuera, como lo haría un navegador. No se publican versiones,
+          valores completos de cabeceras ni nada que ayude a un ataque.
+        </p>
+        <ul class="checks" id="checks"></ul>
+      </section>
+
+      <section class="block wrap" id="quality" aria-labelledby="q-title">
+        <div class="block-head">
+          <h2 id="q-title" data-i18n="qTitle">Accesibilidad y calidad</h2>
+        </div>
+        <ul class="checks" id="quality-list"></ul>
+        <p class="explain" data-i18n="qExplain">
+          Una prueba automática que pasa no certifica accesibilidad completa ni ausencia de errores: detecta los
+          problemas que una máquina puede ver.
+        </p>
+      </section>
+
+      <section class="block wrap" id="evidence" aria-labelledby="ev-title">
+        <div class="block-head">
+          <h2 id="ev-title" data-i18n="evTitle">Evidencias</h2>
+        </div>
+        <ul class="evidence" id="evidence-list"></ul>
+      </section>
+
+      <section class="block wrap" id="method" aria-labelledby="m-title">
+        <div class="block-head">
+          <h2 id="m-title" data-i18n="mTitle">Método y límites</h2>
+        </div>
+        <ul class="limits" id="limits"></ul>
+      </section>
+    </main>
+
+    <footer class="foot">
+      <div class="wrap">
+        <p id="foot"></p>
+      </div>
+    </footer>
+
+    <noscript>
+      <p class="wrap noscript">
+        Esta página lee sus datos de <a href="data/status.json">data/status.json</a>,
+        <a href="data/lighthouse.json">data/lighthouse.json</a> y <a href="data/security.json">data/security.json</a>.
+      </p>
+    </noscript>
+    <script src="app.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+name: Daily audit
+
+# Once a day: Lighthouse on mobile and desktop against production, and the security checks anyone can make from
+# outside (scripts/check-daily.mjs). The full Lighthouse reports are kept as this run's artifact for 90 days; the
+# page links to the run.
+on:
+  schedule:
+    - cron: "23 7 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: data
+  cancel-in-progress: false
+
+jobs:
+  audit:
+    name: Lighthouse and security
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22
+      - name: Audit production
+        run: node scripts/check-daily.mjs
+      - name: Keep the Lighthouse reports
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: lighthouse-reports
+          path: .reports/*.html
+          retention-days: 90
+      - name: Commit the results
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data
+          git diff --cached --quiet && exit 0
+          git commit -q -m "data: daily audit $(date -u +%Y-%m-%d)"
+          for i in 1 2 3; do git pull -q --rebase origin main && git push -q origin HEAD:main && exit 0; sleep 5; done
+          exit 1
+
+  deploy:
+    needs: audit
+    uses: ./.github/workflows/deploy.yml
