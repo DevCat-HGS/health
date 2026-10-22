@@ -1,0 +1,66 @@
+{
+ "t": "2026-10-22T18:04:21.240Z",
+ "url": "https://hgsportafolio.site/",
+ "run": {
+  "id": "39828046632",
+  "url": "https://github.com/DevCat-HGS/health/actions/runs/39828046632"
+ },
+ "checks": [
+  {
+   "id": "hsts",
+   "state": "pass",
+   "note": "max-age 365 d"
+  },
+  {
+   "id": "csp",
+   "state": "pass"
+  },
+  {
+   "id": "nosniff",
+   "state": "pass"
+  },
+  {
+   "id": "frame",
+   "state": "pass"
+  },
+  {
+   "id": "referrer",
+   "state": "pass"
+  },
+  {
+   "id": "permissions",
+   "state": "pass"
+  },
+  {
+   "id": "coop",
+   "state": "pass"
+  },
+  {
+   "id": "https-redirect",
+   "state": "pass"
+  },
+  {
+   "id": "security-txt",
+   "state": "pass",
+   "note": "vence 2027-10-21"
+  },
+  {
+   "id": "tls:hgsportafolio.site",
+   "state": "pass",
+   "host": "hgsportafolio.site",
+   "daysLeft": 88
+  },
+  {
+   "id": "tls:docs.hgsportafolio.site",
+   "state": "pass",
+   "host": "docs.hgsportafolio.site",
+   "daysLeft": 89
+  },
+  {
+   "id": "tls:health.hgsportafolio.site",
+   "state": "pass",
+   "host": "health.hgsportafolio.site",
+   "daysLeft": 89
+  }
+ ]
+}
