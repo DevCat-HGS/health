@@ -103,7 +103,7 @@ const T = {
     ],
     limits: [
       "Se mide desde un solo lugar: los servidores de GitHub Actions. Una caída que solo afecte a otra región no se vería.",
-      "GitHub puede retrasar las tareas programadas varios minutos, así que «cada 30 minutos» es aproximado.",
+      "GitHub retrasa sus tareas programadas, a veces horas. Por eso un temporizador en Netlify le pide la medición cada 30 minutos, y el cron de GitHub queda de respaldo. Si los dos fallan, la página lo marca como «Desactualizado».",
       "Lighthouse es una prueba de laboratorio en una máquina compartida: las cifras varían de un día a otro.",
       "La seguridad publicada son controles concretos y limitados, no una auditoría ni una prueba de penetración.",
       "El panel de administración del sitio es privado y no se monitorea aquí.",
@@ -209,7 +209,7 @@ const T = {
     ],
     limits: [
       "Measured from one place only: GitHub Actions servers. An outage that only hits another region would not show.",
-      "GitHub can delay scheduled jobs by several minutes, so “every 30 minutes” is approximate.",
+      "GitHub delays its scheduled jobs, sometimes by hours. So a timer on Netlify asks for a check every 30 minutes, with GitHub's own cron as a fallback. If both fail, the page flags the data as “Out of date”.",
       "Lighthouse is a lab test on a shared machine: figures move from one day to the next.",
       "The published security items are concrete, limited checks, not an audit or a penetration test.",
       "The site's admin panel is private and is not monitored here.",

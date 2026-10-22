@@ -21,7 +21,7 @@ Una caída abre un issue con la etiqueta `incidente` y se cierra sola cuando la 
 
 ## Límites
 
-Mide desde un solo lugar (los servidores de GitHub Actions) y GitHub puede retrasar las tareas programadas unos minutos. Lighthouse es una prueba de laboratorio, no de usuarios reales. Los controles de seguridad son concretos y limitados: no son una auditoría.
+Mide desde un solo lugar (los servidores de GitHub Actions). GitHub retrasa sus tareas programadas, a veces horas, así que un temporizador en Netlify lanza `uptime.yml` cada 30 minutos (y `daily.yml` una vez al día) por `workflow_dispatch`; el cron de los workflows queda de respaldo. La medición corre siempre aquí, a la vista. Lighthouse es una prueba de laboratorio, no de usuarios reales. Los controles de seguridad son concretos y limitados: no son una auditoría.
 
 ## Por qué en GitHub Pages
 
