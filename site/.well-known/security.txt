@@ -1,0 +1,6 @@
+# Cómo reportar un problema de seguridad de health.hgsportafolio.site (RFC 9116). El mismo contacto que hgsportafolio.site.
+# How to report a security issue in health.hgsportafolio.site (RFC 9116). The same contact as hgsportafolio.site.
+Contact: mailto:hdevelopergs@gmail.com
+Expires: 2027-10-21T00:00:00.000Z
+Preferred-Languages: es, en
+Canonical: https://health.hgsportafolio.site/.well-known/security.txt
