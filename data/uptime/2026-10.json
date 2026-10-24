@@ -4275,5 +4275,50 @@
     "ok": true
    }
   }
+ },
+ {
+  "t": "2026-10-24T14:07:15.778Z",
+  "r": {
+   "home": {
+    "s": 200,
+    "ms": 427,
+    "ok": true
+   },
+   "home-en": {
+    "s": 200,
+    "ms": 240,
+    "ok": true
+   },
+   "migozz": {
+    "s": 200,
+    "ms": 317,
+    "ok": true
+   },
+   "aria": {
+    "s": 200,
+    "ms": 316,
+    "ok": true
+   },
+   "devpanel": {
+    "s": 200,
+    "ms": 567,
+    "ok": true
+   },
+   "portafolio": {
+    "s": 200,
+    "ms": 480,
+    "ok": true
+   },
+   "docs": {
+    "s": 200,
+    "ms": 489,
+    "ok": true
+   },
+   "health": {
+    "s": 200,
+    "ms": 479,
+    "ok": true
+   }
+  }
  }
 ]
