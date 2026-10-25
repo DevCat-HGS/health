@@ -5895,5 +5895,50 @@
     "ok": true
    }
   }
+ },
+ {
+  "t": "2026-10-25T05:14:02.429Z",
+  "r": {
+   "home": {
+    "s": 200,
+    "ms": 351,
+    "ok": true
+   },
+   "home-en": {
+    "s": 200,
+    "ms": 107,
+    "ok": true
+   },
+   "migozz": {
+    "s": 200,
+    "ms": 413,
+    "ok": true
+   },
+   "aria": {
+    "s": 200,
+    "ms": 273,
+    "ok": true
+   },
+   "devpanel": {
+    "s": 200,
+    "ms": 292,
+    "ok": true
+   },
+   "portafolio": {
+    "s": 200,
+    "ms": 289,
+    "ok": true
+   },
+   "docs": {
+    "s": 200,
+    "ms": 445,
+    "ok": true
+   },
+   "health": {
+    "s": 200,
+    "ms": 389,
+    "ok": true
+   }
+  }
  }
 ]
