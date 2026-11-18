@@ -40454,5 +40454,50 @@
     "ok": true
    }
   }
+ },
+ {
+  "t": "2026-11-18T10:07:19.946Z",
+  "r": {
+   "home": {
+    "s": 200,
+    "ms": 395,
+    "ok": true
+   },
+   "home-en": {
+    "s": 200,
+    "ms": 268,
+    "ok": true
+   },
+   "migozz": {
+    "s": 200,
+    "ms": 373,
+    "ok": true
+   },
+   "aria": {
+    "s": 200,
+    "ms": 294,
+    "ok": true
+   },
+   "devpanel": {
+    "s": 200,
+    "ms": 288,
+    "ok": true
+   },
+   "portafolio": {
+    "s": 200,
+    "ms": 389,
+    "ok": true
+   },
+   "docs": {
+    "s": 200,
+    "ms": 314,
+    "ok": true
+   },
+   "health": {
+    "s": 200,
+    "ms": 451,
+    "ok": true
+   }
+  }
  }
 ]
