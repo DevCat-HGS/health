@@ -2181,5 +2181,42 @@
    "fcp": 405.0235,
    "si": 895.7617731666687
   }
+ },
+ {
+  "t": "2026-11-20T16:14:48.957Z",
+  "url": "https://hgsportafolio.site/",
+  "version": "12.8.2",
+  "run": {
+   "id": "44771390292",
+   "url": "https://github.com/DevCat-HGS/health/actions/runs/44771390292"
+  },
+  "mobile": {
+   "runs": 3,
+   "scores": {
+    "performance": 99,
+    "accessibility": 100,
+    "best-practices": 100,
+    "seo": 100
+   },
+   "lcp": 1838.6680000000001,
+   "cls": 0.0055006251948448645,
+   "tbt": 62,
+   "fcp": 1238.6680000000001,
+   "si": 2370.3302320000066
+  },
+  "desktop": {
+   "runs": 3,
+   "scores": {
+    "performance": 100,
+    "accessibility": 100,
+    "best-practices": 100,
+    "seo": 100
+   },
+   "lcp": 685.19172,
+   "cls": 0.01674395452654732,
+   "tbt": 0,
+   "fcp": 371.09450000000004,
+   "si": 811.4520338333382
+  }
  }
 ]

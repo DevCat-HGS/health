@@ -1,9 +1,9 @@
 {
- "t": "2026-11-20T07:07:24.770Z",
+ "t": "2026-11-20T16:14:48.957Z",
  "url": "https://hgsportafolio.site/",
  "run": {
-  "id": "44692605112",
-  "url": "https://github.com/DevCat-HGS/health/actions/runs/44692605112"
+  "id": "44771390292",
+  "url": "https://github.com/DevCat-HGS/health/actions/runs/44771390292"
  },
  "checks": [
   {
@@ -54,7 +54,7 @@
    "id": "tls:docs.hgsportafolio.site",
    "state": "pass",
    "host": "docs.hgsportafolio.site",
-   "daysLeft": 61
+   "daysLeft": 60
   },
   {
    "id": "tls:health.hgsportafolio.site",
