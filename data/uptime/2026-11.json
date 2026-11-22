@@ -49814,5 +49814,50 @@
     "ok": true
    }
   }
+ },
+ {
+  "t": "2026-11-22T11:37:22.182Z",
+  "r": {
+   "home": {
+    "s": 200,
+    "ms": 395,
+    "ok": true
+   },
+   "home-en": {
+    "s": 200,
+    "ms": 266,
+    "ok": true
+   },
+   "migozz": {
+    "s": 200,
+    "ms": 277,
+    "ok": true
+   },
+   "aria": {
+    "s": 200,
+    "ms": 241,
+    "ok": true
+   },
+   "devpanel": {
+    "s": 200,
+    "ms": 276,
+    "ok": true
+   },
+   "portafolio": {
+    "s": 200,
+    "ms": 97,
+    "ok": true
+   },
+   "docs": {
+    "s": 200,
+    "ms": 144,
+    "ok": true
+   },
+   "health": {
+    "s": 200,
+    "ms": 128,
+    "ok": true
+   }
+  }
  }
 ]
