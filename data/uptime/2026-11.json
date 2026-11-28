@@ -63360,5 +63360,50 @@
     "ok": true
    }
   }
+ },
+ {
+  "t": "2026-11-28T10:07:15.314Z",
+  "r": {
+   "home": {
+    "s": 200,
+    "ms": 361,
+    "ok": true
+   },
+   "home-en": {
+    "s": 200,
+    "ms": 362,
+    "ok": true
+   },
+   "migozz": {
+    "s": 200,
+    "ms": 281,
+    "ok": true
+   },
+   "aria": {
+    "s": 200,
+    "ms": 330,
+    "ok": true
+   },
+   "devpanel": {
+    "s": 200,
+    "ms": 136,
+    "ok": true
+   },
+   "portafolio": {
+    "s": 200,
+    "ms": 309,
+    "ok": true
+   },
+   "docs": {
+    "s": 200,
+    "ms": 295,
+    "ok": true
+   },
+   "health": {
+    "s": 200,
+    "ms": 409,
+    "ok": true
+   }
+  }
  }
 ]
